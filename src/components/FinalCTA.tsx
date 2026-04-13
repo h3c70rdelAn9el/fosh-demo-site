@@ -5,7 +5,7 @@ export function FinalCTA() {
   return (
     <Section
       id="join"
-      className="relative overflow-hidden bg-gradient-to-br from-amber-950/40 via-zinc-950 to-zinc-950 py-24 md:py-32"
+      className="relative overflow-hidden bg-linear-to-br from-amber-950/40 via-zinc-950 to-zinc-950 py-24 md:py-32"
       containerClassName="relative z-10 text-center"
     >
       <div

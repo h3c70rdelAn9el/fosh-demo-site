@@ -13,7 +13,7 @@ export function Hero() {
           className="h-full w-full object-cover"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/92 via-zinc-950/78 to-zinc-950" />
+        <div className="absolute inset-0 bg-linear-to-b from-zinc-950/92 via-zinc-950/78 to-zinc-950" />
       </div>
 
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center">
