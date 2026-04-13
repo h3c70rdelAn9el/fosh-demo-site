@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ButtonLink } from './ButtonLink'
 
 const HERO_BG =
@@ -7,12 +8,16 @@ export function Hero() {
   return (
     <header className="relative flex min-h-screen shrink-0 flex-col items-center justify-center px-6 pb-16 pt-24 text-center sm:pt-16">
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden>
-        <img
-          src={HERO_BG}
-          alt=""
-          className="h-full w-full object-cover"
-          fetchPriority="high"
-        />
+        <div className="relative h-full w-full">
+          <Image
+            src={HERO_BG}
+            alt=""
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
         <div className="absolute inset-0 bg-linear-to-b from-zinc-950/92 via-zinc-950/78 to-zinc-950" />
       </div>
 

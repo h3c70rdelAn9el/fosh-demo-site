@@ -1,0 +1,48 @@
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import type { ReactNode } from 'react'
+import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const description =
+  "FOSH helps you find local events, hidden venues, and the moments you'd otherwise miss."
+
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'FOSH — Discover what’s happening around you',
+    template: '%s | FOSH',
+  },
+  description,
+  icons: { icon: '/favicon.svg' },
+  openGraph: {
+    title: 'FOSH — Discover what’s happening around you',
+    description,
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'FOSH — Discover what’s happening around you',
+    description,
+  },
+  robots: { index: true, follow: true },
+}
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en">
+      <body className={`${inter.className} antialiased`}>
+        {children}
+      </body>
+    </html>
+  )
+}
