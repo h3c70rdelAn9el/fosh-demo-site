@@ -19,7 +19,7 @@ export function FinalCTA() {
         There’s more happening around you than you think.
       </h2>
       <div className="relative mt-10">
-        <ButtonLink href="#how-it-works" variant="primary" className="min-w-[12rem] px-10">
+        <ButtonLink href="#how-it-works" variant="primary" className="min-w-48 px-10">
           Explore Events
         </ButtonLink>
       </div>
