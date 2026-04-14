@@ -1,5 +1,4 @@
-import { APP_MAP_DEMO_GIF, APP_MAP_DEMO_POSTER } from '@/constants/app-preview';
-
+import { AppMapDemoMedia } from './AppMapDemoMedia';
 import { ScrollReveal } from './ScrollReveal';
 
 function PhoneFrame() {
@@ -15,25 +14,7 @@ function PhoneFrame() {
             className="pointer-events-none absolute left-1/2 top-2 z-10 h-5 w-[88px] -translate-x-1/2 rounded-full bg-zinc-950/95 shadow-sm"
             aria-hidden
           />
-          {/*
-            Prefer GIF for motion. `<picture>` + plain `<img>` so GIFs animate (next/image often won’t).
-            If the GIF isn’t in /public yet, the inner img still shows the PNG poster.
-            Reduced motion: only the static poster is offered via `media` on the source.
-          */}
-          <picture>
-            <source
-              srcSet={APP_MAP_DEMO_GIF}
-              type="image/gif"
-              media="(prefers-reduced-motion: no-preference)"
-            />
-            <img
-              src={APP_MAP_DEMO_POSTER}
-              alt="FOSH app: map with nearby events and filters"
-              className="aspect-9/19.5 h-auto w-full object-cover object-top"
-              loading="lazy"
-              decoding="async"
-            />
-          </picture>
+          <AppMapDemoMedia />
         </div>
       </div>
     </div>
