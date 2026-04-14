@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { HowItWorks } from '@/components/HowItWorks';
 import { SocialProof } from '@/components/SocialProof';
+import { VisualBreak } from '@/components/VisualBreak';
 import { WhatIsFosh } from '@/components/WhatIsFosh';
 import { WhyFosh } from '@/components/WhyFosh';
 
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Hero />
       <main>
         <WhatIsFosh />
+        <VisualBreak />
         <HowItWorks />
         <WhyFosh />
         <AudienceSplit />
