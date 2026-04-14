@@ -3,18 +3,18 @@ import { Section } from './Section'
 const steps = [
   {
     step: '1',
-    title: 'Browse events near you',
-    body: 'Find what’s happening in your city right now.',
+    title: 'See what’s live near you',
+    body: 'Location-aware listings so tonight’s options are obvious—not scattered across apps.',
   },
   {
     step: '2',
-    title: 'Discover something new',
-    body: 'Skip the noise. Find the stuff you actually want to go to.',
+    title: 'Tune it to your night',
+    body: 'Filter by date, genre, venue, or vibe—skip the noise, keep the good stuff.',
   },
   {
     step: '3',
-    title: 'Show up',
-    body: 'That’s it. No friction. Just go experience it.',
+    title: 'Go',
+    body: 'Plans change; FOSH updates in real time. Decide, save, and show up.',
   },
 ] as const
 

@@ -16,7 +16,7 @@ export function FinalCTA() {
         <div className="absolute -right-1/4 bottom-0 h-96 w-96 rounded-full bg-orange-600/10 blur-3xl" />
       </div>
       <h2 className="relative text-balance text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
-        There’s more happening around you than you think.
+        Your neighborhood has more going on than the feed shows.
       </h2>
       <div className="relative mt-10">
         <ButtonLink href="#how-it-works" variant="primary" className="min-w-48 px-10">

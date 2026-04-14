@@ -6,7 +6,7 @@ type FooterLink = {
 
 const links: FooterLink[] = [
   { label: 'About', href: '#local' },
-  { label: 'Contact', href: 'mailto:hello@fosh.app' },
+  { label: 'Contact', href: 'mailto:hello@fosh.live' },
   { label: 'Instagram', href: 'https://instagram.com', external: true },
   { label: 'Terms', href: '#' },
   { label: 'Privacy', href: '#' },

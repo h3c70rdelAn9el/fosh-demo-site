@@ -1,24 +1,26 @@
 import { Section } from './Section'
 
 const bullets = [
-  'Local venues, not just stadiums',
-  'Small events that actually matter',
-  'Real communities, not mass listings',
+  'Discover what’s on near you—not just the headliners',
+  'Filter by date, genre, venue, or vibe',
+  'Real-time updates when plans change',
+  'Save and go without app-hopping',
 ] as const
 
 export function WhatIsFosh() {
   return (
     <Section id="local" className="border-t border-zinc-800/80 bg-zinc-950">
       <h2 className="text-balance text-3xl font-bold tracking-tight text-white md:text-4xl">
-        What is FOSH?
+        Local live events shouldn’t be this hard to find
       </h2>
       <div className="mt-8 space-y-6 text-lg leading-relaxed text-zinc-400">
         <p>
-          FOSH is built for the events you don’t see on big platforms.
+          Most people don’t stay home from lack of interest—they stay home because what’s happening tonight is buried
+          across feeds, flyers, and outdated calendars.
         </p>
         <p>
-          From open mics and local shows to pop-ups and underground scenes—this
-          is where real things happen.
+          FOSH is an AI-powered, real-time local discovery layer: one place to see what’s live around you, built for how
+          people actually decide to go out.
         </p>
       </div>
       <ul className="mt-12 space-y-4 border-l-2 border-amber-500/40 pl-6 text-left text-zinc-300">

@@ -37,14 +37,15 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center md:mt-40">
         <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-amber-400/90">
-          Local-first · Real scenes
+          Get up · Get out · Have fun
         </p>
         <h1 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl md:leading-[1.08]">
-          Discover what’s happening around you.
-          <span className="mt-2 block text-zinc-300 md:mt-3">Not the big shows—the real ones.</span>
+          Real-time discovery for local live events.
+          <span className="mt-2 block text-zinc-300 md:mt-3">Fans, artists, and venues—finally in one place.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
-          FOSH helps you find local events, hidden venues, and the moments you’d otherwise miss.
+          FOSH pulls fragmented listings into a single, location-smart feed—so choosing a night out is faster than
+          scrolling three apps and a dozen venue sites.
         </p>
         <div className="mt-12 flex w-full max-w-md flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center sm:gap-4">
           <ButtonLink
