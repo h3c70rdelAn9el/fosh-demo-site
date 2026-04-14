@@ -44,7 +44,31 @@
   }
 }
 
+/* Slow zoom + drift on full-bleed photos (Ken Burns–style). Parent must use overflow-hidden. */
+@keyframes photo-ken-burns {
+  0% {
+    transform: scale(1.07) translate3d(-1.2%, -0.6%, 0);
+  }
+  100% {
+    transform: scale(1.14) translate3d(1%, 0.8%, 0);
+  }
+}
+
+@keyframes photo-ken-burns-alt {
+  0% {
+    transform: scale(1.05) translate3d(1%, -0.5%, 0);
+  }
+  100% {
+    transform: scale(1.12) translate3d(-1.2%, 0.6%, 0);
+  }
+}
+
 @layer utilities {
+  /* Reliable easing for scroll reveals (avoids Tailwind arbitrary-value comma issues). */
+  .ease-apple {
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .animate-hero-bg-in {
       animation: hero-bg-in 1.15s cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -79,6 +103,21 @@
     .animate-hero-delay-6 {
       animation-delay: 660ms;
     }
+
+    .animate-photo-ken-burns {
+      animation: photo-ken-burns 22s ease-in-out infinite alternate;
+      will-change: transform;
+    }
+
+    .animate-photo-ken-burns-alt {
+      animation: photo-ken-burns-alt 26s ease-in-out infinite alternate;
+      will-change: transform;
+    }
+
+    .animate-photo-ken-burns-slow {
+      animation: photo-ken-burns 32s ease-in-out infinite alternate;
+      will-change: transform;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -88,6 +127,14 @@
       animation: none !important;
       opacity: 1 !important;
       transform: none !important;
+    }
+
+    .animate-photo-ken-burns,
+    .animate-photo-ken-burns-alt,
+    .animate-photo-ken-burns-slow {
+      animation: none !important;
+      transform: none !important;
+      will-change: auto;
     }
   }
 }

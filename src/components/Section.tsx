@@ -10,7 +10,7 @@ type SectionProps = {
 
 export function Section({ id, children, className, containerClassName }: SectionProps) {
   return (
-    <section id={id} className={cn('px-6 py-20 md:py-28', className)}>
+    <section id={id} className={cn('px-6 py-24 md:py-36', className)}>
       <div className={cn('mx-auto max-w-3xl', containerClassName)}>{children}</div>
     </section>
   )

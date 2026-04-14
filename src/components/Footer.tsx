@@ -1,7 +1,3 @@
-'use client'
-
-import { ScrollReveal } from './ScrollReveal'
-
 type FooterLink = {
   label: string
   href: string
@@ -19,8 +15,8 @@ const links: FooterLink[] = [
 export function Footer() {
   return (
     <footer className="border-t border-zinc-800 bg-zinc-950 px-6 py-12">
-      <ScrollReveal amount="md">
-        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-8 md:flex-row md:items-start">
+      <div className="mx-auto max-w-5xl">
+        <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
           <div className="text-center md:text-left">
             <p className="text-lg font-bold tracking-tight text-white">FOSH</p>
             <p className="mt-1 max-w-xs text-sm text-zinc-500">
@@ -43,10 +39,10 @@ export function Footer() {
             </ul>
           </nav>
         </div>
-        <p className="mx-auto mt-10 max-w-5xl text-center text-xs text-zinc-600">
+        <p className="mt-10 text-center text-xs text-zinc-600">
           © {new Date().getFullYear()} FOSH. All rights reserved.
         </p>
-      </ScrollReveal>
+      </div>
     </footer>
   )
 }

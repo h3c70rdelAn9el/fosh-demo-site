@@ -20,7 +20,7 @@ export function VisualBreak() {
             src={BREAK_IMAGE}
             alt=""
             fill
-            className="object-cover object-center"
+            className="object-cover object-center animate-photo-ken-burns-slow"
             sizes="100vw"
             loading="lazy"
           />

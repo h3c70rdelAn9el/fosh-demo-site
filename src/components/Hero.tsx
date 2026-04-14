@@ -8,11 +8,17 @@ export function Hero() {
   return (
     <header className="relative flex min-h-screen shrink-0 flex-col items-center justify-center overflow-hidden px-6 pb-16 pt-24 text-center sm:pt-16">
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden>
-        {/* Viewport-fixed photo (same idea as AudienceSplit). Opacity-only fade — no transform on this layer or fixed breaks. */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat animate-hero-gradient-in"
-          style={{ backgroundImage: `url(${HERO_BG})` }}
-        />
+        {/* Ken Burns on the image; fade-in on a wrapper so it doesn’t fight the transform animation. */}
+        <div className="absolute inset-0 animate-hero-gradient-in">
+          <Image
+            src={HERO_BG}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center animate-photo-ken-burns"
+          />
+        </div>
         <div className="absolute inset-0 bg-linear-to-b from-zinc-950/92 via-zinc-950/78 to-zinc-950 animate-hero-gradient-in" />
       </div>
 

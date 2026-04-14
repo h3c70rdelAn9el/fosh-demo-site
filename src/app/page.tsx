@@ -1,3 +1,4 @@
+import { AppMapPreview } from '@/components/AppMapPreview';
 import { AudienceSplit } from '@/components/AudienceSplit';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
@@ -6,13 +7,13 @@ import { HowItWorks } from '@/components/HowItWorks';
 import { SocialProof } from '@/components/SocialProof';
 import { WhatIsFosh } from '@/components/WhatIsFosh';
 import { WhyFosh } from '@/components/WhyFosh';
-import Image from 'next/image';
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Logo is now overlaid inside <Hero /> */}
       <Hero />
+      <AppMapPreview />
       <main>
         <WhatIsFosh />
         <HowItWorks />

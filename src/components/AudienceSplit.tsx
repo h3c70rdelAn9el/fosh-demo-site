@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import { HERO_BG } from '@/constants/site-images';
 
 import { ScrollReveal } from './ScrollReveal';
@@ -23,25 +25,30 @@ export function AudienceSplit() {
       id="for-you"
       className="relative isolate overflow-hidden border-y border-zinc-800/80 bg-zinc-950 px-6 py-20 md:py-28"
     >
-      {/* Same hero photo, viewport-fixed (does not scroll with the section) — clipped to this band */}
+      {/* Same crowd photo as hero; slow drift reads as “alive” without video. */}
+      <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden>
+        <Image
+          src={HERO_BG}
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-center animate-photo-ken-burns-alt"
+          loading="lazy"
+        />
+      </div>
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-fixed bg-no-repeat"
-        style={{ backgroundImage: `url(${HERO_BG})` }}
-        aria-hidden
-      />
-      <div
-        className="absolute inset-0 z-1 bg-linear-to-b from-zinc-950/82 via-zinc-950/72 to-zinc-950/88"
+        className="absolute inset-0 z-[1] bg-linear-to-b from-zinc-950/82 via-zinc-950/72 to-zinc-950/88"
         aria-hidden
       />
       <div className="relative z-10 mx-auto max-w-5xl">
-        <ScrollReveal>
-          <h2 className="text-balance text-center text-3xl font-bold tracking-tight text-white md:text-4xl">
+        <ScrollReveal variant="prominent">
+          <h2 className="text-balance text-center text-3xl font-bold tracking-tight text-white md:text-4xl md:tracking-[-0.02em]">
             Built for the whole scene
           </h2>
         </ScrollReveal>
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {cards.map(({ title, body }, index) => (
-            <ScrollReveal key={title} delay={index * 100} amount="md">
+            <ScrollReveal key={title} delay={index * 260} amount="md">
               <article className="h-full rounded-2xl border border-zinc-800/90 bg-zinc-950/60 p-8 shadow-lg shadow-black/20 backdrop-blur-sm">
                 <h3 className="text-xl font-semibold text-white">{title}</h3>
                 <p className="mt-4 leading-relaxed text-zinc-400">{body}</p>

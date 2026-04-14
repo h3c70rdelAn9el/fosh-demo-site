@@ -1,19 +1,19 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import type { ReactNode } from 'react'
-import './globals.css'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import type { ReactNode } from 'react';
+import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-})
+});
 
 const description =
-  "FOSH helps you find local events, hidden venues, and the moments you'd otherwise miss."
+  "FOSH helps you find local events, hidden venues, and the moments you'd otherwise miss.";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     template: '%s | FOSH',
   },
   description,
-  icons: { icon: '/favicon.svg' },
   openGraph: {
     title: 'FOSH — Discover what’s happening around you',
     description,
@@ -35,14 +34,12 @@ export const metadata: Metadata = {
     description,
   },
   robots: { index: true, follow: true },
-}
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-zinc-950 text-zinc-100 antialiased`}>
-        {children}
-      </body>
+      <body className={`${inter.className} bg-zinc-950 text-zinc-100 antialiased`}>{children}</body>
     </html>
-  )
+  );
 }
