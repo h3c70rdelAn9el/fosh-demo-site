@@ -1,3 +1,4 @@
+import { ScrollReveal } from './ScrollReveal'
 import { Section } from './Section'
 
 const steps = [
@@ -24,18 +25,23 @@ export function HowItWorks() {
       id="how-it-works"
       className="bg-zinc-900/35"
       containerClassName="max-w-5xl"
+      reveal={false}
     >
-      <h2 className="text-center text-3xl font-bold tracking-tight text-white md:text-4xl">
-        How it works
-      </h2>
+      <ScrollReveal>
+        <h2 className="text-center text-3xl font-bold tracking-tight text-white md:text-4xl">
+          How it works
+        </h2>
+      </ScrollReveal>
       <ol className="mt-14 grid gap-10 md:grid-cols-3 md:gap-8">
-        {steps.map(({ step, title, body }) => (
-          <li key={step} className="relative flex flex-col items-center text-center">
-            <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-amber-500/50 bg-amber-500/10 text-sm font-bold text-amber-400">
-              {step}
-            </span>
-            <h3 className="text-xl font-semibold text-white">{title}</h3>
-            <p className="mt-3 text-pretty leading-relaxed text-zinc-400">{body}</p>
+        {steps.map(({ step, title, body }, index) => (
+          <li key={step} className="relative">
+            <ScrollReveal delay={index * 95} amount="md" className="flex flex-col items-center text-center">
+              <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-amber-500/50 bg-amber-500/10 text-sm font-bold text-amber-400">
+                {step}
+              </span>
+              <h3 className="text-xl font-semibold text-white">{title}</h3>
+              <p className="mt-3 text-pretty leading-relaxed text-zinc-400">{body}</p>
+            </ScrollReveal>
           </li>
         ))}
       </ol>
