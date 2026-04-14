@@ -1,25 +1,18 @@
 import Image from 'next/image';
-import { ButtonLink } from './ButtonLink';
 
-const HERO_BG =
-  'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1920&q=80';
+import { HERO_BG } from '@/constants/site-images';
+
+import { ButtonLink } from './ButtonLink';
 
 export function Hero() {
   return (
-    <header className="relative flex min-h-screen shrink-0 flex-col items-center justify-center px-6 pb-16 pt-24 text-center sm:pt-16">
-      <div
-        className="pointer-events-none absolute inset-0 z-0 overflow-hidden"
-        aria-hidden>
-        <div className="relative h-full w-full animate-hero-bg-in">
-          <Image
-            src={HERO_BG}
-            alt=""
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
-        </div>
+    <header className="relative flex min-h-screen shrink-0 flex-col items-center justify-center overflow-hidden px-6 pb-16 pt-24 text-center sm:pt-16">
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden>
+        {/* Viewport-fixed photo (same idea as AudienceSplit). Opacity-only fade — no transform on this layer or fixed breaks. */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat animate-hero-gradient-in"
+          style={{ backgroundImage: `url(${HERO_BG})` }}
+        />
         <div className="absolute inset-0 bg-linear-to-b from-zinc-950/92 via-zinc-950/78 to-zinc-950 animate-hero-gradient-in" />
       </div>
 

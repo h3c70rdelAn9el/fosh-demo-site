@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 
 import { cn } from '@/lib/cn'
 
@@ -17,11 +17,24 @@ export function ScrollReveal({ children, className, delay = 0, amount = 'lg' }: 
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const el = ref.current
     if (!el) return
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      queueMicrotask(() => {
+        setVisible(true)
+      })
+      return
+    }
+
+    const inViewport = () => {
+      const rect = el.getBoundingClientRect()
+      const vh = window.innerHeight
+      return rect.top < vh && rect.bottom > 0
+    }
+
+    if (inViewport()) {
       queueMicrotask(() => {
         setVisible(true)
       })
@@ -35,7 +48,7 @@ export function ScrollReveal({ children, className, delay = 0, amount = 'lg' }: 
           observer.disconnect()
         }
       },
-      { threshold: 0.12, rootMargin: '0px 0px -6% 0px' },
+      { threshold: 0.01, rootMargin: '0px 0px 12% 0px' },
     )
 
     observer.observe(el)
