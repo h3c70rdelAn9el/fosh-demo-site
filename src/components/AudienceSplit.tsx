@@ -7,15 +7,15 @@ import { ScrollReveal } from './ScrollReveal';
 const cards = [
   {
     title: 'Fans',
-    body: 'Everything happening in the city—without checking five different places.',
+    body: 'Finding something you want to do now is now much easier.',
   },
   {
     title: 'Acts',
-    body: 'Get found by the people who’d love your show—without betting everything on a single algorithm.',
+    body: 'Worry less about filling up rooms and getting invited back.',
   },
   {
     title: 'Venues',
-    body: 'Clearer promotion, better turnout, and real-time updates when the night shifts.',
+    body: 'Show what’s happening, bring people in, and build on what works.',
   },
 ] as const;
 
@@ -23,10 +23,11 @@ export function AudienceSplit() {
   return (
     <section
       id="for-you"
-      className="relative isolate overflow-hidden border-y border-zinc-800/80 bg-zinc-950 px-6 py-20 md:py-28"
-    >
+      className="relative isolate overflow-hidden border-y border-zinc-800/80 bg-zinc-950 px-6 py-20 md:py-28">
       {/* Same crowd photo as hero; slow drift reads as “alive” without video. */}
-      <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden>
+      <div
+        className="absolute inset-0 z-0 overflow-hidden"
+        aria-hidden>
         <Image
           src={HERO_BG}
           alt=""
@@ -41,14 +42,12 @@ export function AudienceSplit() {
         aria-hidden
       />
       <div className="relative z-10 mx-auto max-w-5xl">
-        <ScrollReveal variant="prominent">
-          <h2 className="text-balance text-center text-3xl font-bold tracking-tight text-white md:text-4xl md:tracking-[-0.02em]">
-            Built for the whole scene
-          </h2>
-        </ScrollReveal>
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {cards.map(({ title, body }, index) => (
-            <ScrollReveal key={title} delay={index * 260} amount="md">
+            <ScrollReveal
+              key={title}
+              delay={index * 260}
+              amount="md">
               <article className="h-full rounded-2xl border border-zinc-800/90 bg-zinc-950/60 p-8 shadow-lg shadow-black/20 backdrop-blur-sm">
                 <h3 className="text-xl font-semibold text-white">{title}</h3>
                 <p className="mt-4 leading-relaxed text-zinc-400">{body}</p>
