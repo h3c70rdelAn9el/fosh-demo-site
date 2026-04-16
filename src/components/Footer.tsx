@@ -7,9 +7,11 @@ type FooterLink = {
 const links: FooterLink[] = [
   { label: 'Contact', href: 'mailto:admin@fosh.live' },
   { label: 'Instagram', href: 'https://www.instagram.com/tsglider/', external: true },
-  { label: 'Terms', href: '#' },
+  { label: 'Terms', href: '/terms' },
   { label: 'Privacy', href: '#' },
 ];
+
+import Link from 'next/link';
 
 export function Footer() {
   return (
@@ -26,12 +28,20 @@ export function Footer() {
             <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-zinc-400">
               {links.map(({ label, href, external }) => (
                 <li key={label}>
-                  <a
-                    href={href}
-                    className="transition-colors hover:text-zinc-100"
-                    {...(external ? { target: '_blank', rel: 'noreferrer noopener' } : {})}>
-                    {label}
-                  </a>
+                  {href.startsWith('/') && !external ? (
+                    <Link
+                      href={href}
+                      className="transition-colors hover:text-zinc-100">
+                      {label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={href}
+                      className="transition-colors hover:text-zinc-100"
+                      {...(external ? { target: '_blank', rel: 'noreferrer noopener' } : {})}>
+                      {label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
