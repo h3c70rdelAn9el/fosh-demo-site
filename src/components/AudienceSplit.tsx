@@ -25,11 +25,6 @@ export function AudienceSplit() {
       id="for-you"
       className="relative isolate overflow-hidden px-6 py-20 md:py-28">
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent"
-        aria-hidden="true"
-      />
-
-      <div
         className="absolute inset-0 z-[1] bg-linear-to-b from-zinc-950/82 via-zinc-950/72 to-zinc-950/88"
         aria-hidden
       />
