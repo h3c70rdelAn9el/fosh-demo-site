@@ -35,19 +35,16 @@ export function AppMapPreview() {
         <div className="text-center lg:text-left">
           <ScrollReveal variant="prominent">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400/90">
-              INSTALL THE APP IN THE APP
+              INSTALL THE APP
             </p>
             <h2
               id="app-preview-heading"
               className="mt-3 text-balance text-3xl font-bold tracking-tight text-white md:text-4xl md:tracking-[-0.02em]">
-              Map-first discovery—then swipe what’s actually on.
+              Start with the map—then decide where to go.
             </h2>
             <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
               Bands, art exhibits, open mics, stand-up, plays, drag, karaoke and more—if it’s live,
               it’s on FOSH.
-              <br />
-              Pan the city, jump dates, and skim the carousel. Built for deciding tonight, not
-              doom-scrolling three apps.
             </p>
             {/* App store icon */}
             <div className="mt-8 flex justify-center lg:justify-start">
