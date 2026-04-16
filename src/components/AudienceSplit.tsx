@@ -23,7 +23,7 @@ export function AudienceSplit() {
   return (
     <section
       id="for-you"
-      className="relative isolate overflow-hidden border-y border-zinc-800/80 bg-zinc-950 px-6 py-20 md:py-28">
+      className="relative isolate overflow-hidden border-y px-6 py-20 md:py-28">
       {/* Same crowd photo as hero; slow drift reads as “alive” without video. */}
       {/* Remove section-specific background image; now handled globally */}
       <div

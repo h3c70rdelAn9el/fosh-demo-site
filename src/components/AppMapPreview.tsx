@@ -14,7 +14,7 @@ function PhoneFrame() {
 export function AppMapPreview() {
   return (
     <section
-      className="relative"
+      className="relative bg-black"
       aria-labelledby="app-preview-heading">
       {/* top gradient line */}
       <div
