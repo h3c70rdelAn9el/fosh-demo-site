@@ -34,7 +34,7 @@ export function AppMapPreview() {
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:items-center lg:gap-16">
         <div className="text-center lg:text-left">
           <ScrollReveal variant="prominent">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-400/90">
+            <p className="text-lg font-semibold uppercase tracking-[0.2em] text-amber-400/90">
               INSTALL THE APP
             </p>
             <h2
