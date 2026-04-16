@@ -170,14 +170,8 @@
   z-index: 10;
   position: absolute;
   inset: 0;
-  /* Lighten center with white, soften vignette */
+  /* Brown vignette only */
   background:
-    radial-gradient(
-      ellipse at center,
-      rgba(255, 255, 255, 0.22) 0%,
-      rgba(255, 255, 255, 0.1) 40%,
-      rgba(255, 255, 255, 0) 70%
-    ),
     radial-gradient(
       ellipse at center,
       rgba(60, 40, 20, 0.18) 0%,

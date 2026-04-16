@@ -68,12 +68,53 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             draggable="false"
             aria-hidden
           />
+          {/* Brighten center */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                'radial-gradient(ellipse at center, rgba(255,255,255,0.28) 0%, rgba(255,255,255,0.10) 40%, rgba(255,255,255,0.00) 70%)',
+              mixBlendMode: 'screen',
+              opacity: 0.7,
+              zIndex: 11,
+            }}
+            aria-hidden
+          />
+          {/* Brown vignette */}
           <div
             className="absolute inset-0 hero-vignette-overlay"
             aria-hidden
           />
         </div>
         {children}
+        <div
+          aria-hidden
+          className="fixed inset-0 -z-10 w-full h-full overflow-hidden">
+          <img
+            src="/bg_copy.jpg"
+            alt=""
+            className="w-full h-full object-cover object-center fixed-bg-image"
+            draggable="false"
+            aria-hidden
+          />
+          {/* Brighten center */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                'radial-gradient(ellipse at center, rgba(255,255,255,0.28) 0%, rgba(255,255,255,0.10) 40%, rgba(255,255,255,0.00) 70%)',
+              mixBlendMode: 'screen',
+              opacity: 0.7,
+              zIndex: 11,
+            }}
+            aria-hidden
+          />
+          {/* Brown vignette */}
+          <div
+            className="absolute inset-0 hero-vignette-overlay"
+            aria-hidden
+          />
+        </div>
       </body>
     </html>
   );

@@ -23,7 +23,7 @@ export function Hero() {
     <header className="relative flex min-h-screen shrink-0 flex-col items-center justify-center overflow-hidden px-6 pb-16 pt-24 text-center sm:pt-16">
       {/* Remove section-specific background image; now handled globally */}
       <div
-        className="absolute inset-0 bg-linear-to-b from-zinc-950/92 via-zinc-950/78 to-zinc-950 animate-hero-gradient-in"
+        className="absolute inset-0 bg-linear-to-b from-zinc-950/92 via-zinc-950/60 to-zinc-950 animate-hero-gradient-in"
         aria-hidden
       />
 
@@ -32,7 +32,7 @@ export function Hero() {
         <Image
           src="/FOSHLogo.png"
           alt="FOSH Logo"
-          width={320}
+          width={420}
           height={80}
           style={{ height: 'auto' }}
           priority
