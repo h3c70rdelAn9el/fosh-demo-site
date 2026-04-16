@@ -43,7 +43,7 @@ export function Hero() {
       {/* Overlayed Logo */}
       <div className="absolute top-12 left-1/2 z-20 flex -translate-x-1/2 justify-center">
         <Image
-          src="/fosh_logo.png"
+          src="/FOSHLogo.png"
           alt="FOSH Logo"
           width={320}
           height={80}
@@ -53,7 +53,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center">
+      <div className="relative z-10 mx-auto flex max-w-4xl mt-26 flex-col items-center">
         <h1 className="animate-hero-fade-in animate-hero-delay-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl md:leading-[1.08]">
           Real-time discovery for local live events.
         </h1>

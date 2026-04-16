@@ -5,7 +5,7 @@ import { ScrollReveal } from './ScrollReveal';
 
 function PhoneFrame() {
   return (
-    <div className="relative">
+    <div className="relative p-8">
       <AppMapDemoMedia />
     </div>
   );
@@ -18,7 +18,7 @@ export function AppMapPreview() {
       aria-labelledby="app-preview-heading">
       {/* top gradient line */}
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-amber-500/25 to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent"
         aria-hidden="true"
       />
 
@@ -37,8 +37,8 @@ export function AppMapPreview() {
             </h2>
 
             <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
-              Bands, art exhibits, open mics, stand-up, plays, drag, karaoke and more—if it&apos;s live,
-              it&apos;s on FOSH.
+              Bands, art exhibits, open mics, stand-up, plays, drag, karaoke and more—if it&apos;s
+              live, it&apos;s on FOSH.
             </p>
 
             {/* STORE BUTTONS */}
