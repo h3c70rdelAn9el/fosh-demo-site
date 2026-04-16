@@ -37,30 +37,23 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center md:mt-40">
-        <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-amber-400/90 animate-hero-fade-in animate-hero-delay-3">
-          Real-time discovery of live music, events and shows across Philadelphia
-        </p>
+      <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center">
         <h1 className="animate-hero-fade-in animate-hero-delay-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl md:leading-[1.08]">
           Real-time discovery for local live events.
-          <span className="mt-2 block text-zinc-300 md:mt-3">
-            Everything happening in the city—without checking five different places.
-          </span>
         </h1>
         <p className="animate-hero-fade-in animate-hero-delay-5 mt-8 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
-          FOSH pulls fragmented listings into a single, location-smart feed—so choosing a night out
-          is faster than scrolling three apps and a dozen venue sites.
+          Everything happening in the city—without checking five different places.
         </p>
         <div className="animate-hero-fade-in animate-hero-delay-6 mt-12 flex w-full max-w-md flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center sm:gap-4">
           <ButtonLink
             href="#how-it-works"
             variant="primary">
-            Register for Free
+            Login
           </ButtonLink>
           <ButtonLink
             href="#join"
             variant="secondary">
-            Join FOSH
+            Register for Free
           </ButtonLink>
         </div>
         {/* Down-pointing arrow below the buttons */}

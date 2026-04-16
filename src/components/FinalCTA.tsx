@@ -1,31 +1,35 @@
-import { ButtonLink } from './ButtonLink'
-import { ScrollReveal } from './ScrollReveal'
-import { Section } from './Section'
+import { ButtonLink } from './ButtonLink';
+import { ScrollReveal } from './ScrollReveal';
+import { Section } from './Section';
 
 export function FinalCTA() {
   return (
     <Section
       id="join"
       className="relative overflow-hidden bg-linear-to-br from-amber-950/40 via-zinc-950 to-zinc-950 py-28 md:py-40"
-      containerClassName="relative z-10 text-center"
-    >
+      containerClassName="relative z-10 text-center">
       <div
         className="pointer-events-none absolute inset-0 opacity-30"
-        aria-hidden
-      >
+        aria-hidden>
         <div className="absolute -left-1/4 top-0 h-96 w-96 rounded-full bg-amber-500/20 blur-3xl" />
         <div className="absolute -right-1/4 bottom-0 h-96 w-96 rounded-full bg-orange-600/10 blur-3xl" />
       </div>
       <ScrollReveal variant="prominent">
         <h2 className="relative text-balance text-3xl font-bold tracking-tight text-white md:text-4xl md:tracking-[-0.02em] lg:text-5xl">
-          Your neighborhood has more going on than the feed shows.
+          Local live events shouldn’t be this hard to find.
         </h2>
       </ScrollReveal>
-      <ScrollReveal variant="default" delay={420} className="relative mt-10">
-        <ButtonLink href="#how-it-works" variant="primary" className="min-w-48 px-10">
+      <ScrollReveal
+        variant="default"
+        delay={420}
+        className="relative mt-10">
+        <ButtonLink
+          href="#how-it-works"
+          variant="primary"
+          className="min-w-48 px-10">
           Explore Events
         </ButtonLink>
       </ScrollReveal>
     </Section>
-  )
+  );
 }

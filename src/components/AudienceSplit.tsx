@@ -7,7 +7,7 @@ import { ScrollReveal } from './ScrollReveal';
 const cards = [
   {
     title: 'Fans',
-    body: 'Music, comedy, trivia, theater—without hunting across feeds and venue sites for tonight’s lineup.',
+    body: 'Everything happening in the city—without checking five different places.',
   },
   {
     title: 'Acts',
