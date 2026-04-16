@@ -4,7 +4,7 @@ import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { HowItWorks } from '@/components/HowItWorks';
-import { SocialProof } from '@/components/SocialProof';
+// import { SocialProof } from '@/components/SocialProof';
 import { WhatIsFosh } from '@/components/WhatIsFosh';
 import { WhyFosh } from '@/components/WhyFosh';
 
@@ -19,7 +19,7 @@ export default function HomePage() {
         <HowItWorks />
         <WhyFosh />
         <AudienceSplit />
-        <SocialProof />
+        {/* <SocialProof /> */}
         <FinalCTA />
       </main>
       <Footer />

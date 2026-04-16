@@ -16,7 +16,7 @@ export function FinalCTA() {
       </div>
       <ScrollReveal variant="prominent">
         <h2 className="relative text-balance text-3xl font-bold tracking-tight text-white md:text-4xl md:tracking-[-0.02em] lg:text-5xl">
-          Local live events shouldn’t be this hard to find.
+          Stop searching. Start going out.
         </h2>
       </ScrollReveal>
       <ScrollReveal
@@ -27,7 +27,7 @@ export function FinalCTA() {
           href="#how-it-works"
           variant="primary"
           className="min-w-48 px-10">
-          Explore Events
+          Login
         </ButtonLink>
       </ScrollReveal>
     </Section>
