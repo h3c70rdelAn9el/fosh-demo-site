@@ -24,20 +24,20 @@ export function AppMapPreview() {
 
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:items-center lg:gap-16">
         {/* LEFT CONTENT */}
-        <div className="text-center lg:text-left">
+        <div className="text-center lg:text-left px-4">
           <ScrollReveal variant="prominent">
-            <p className="text-lg font-semibold uppercase tracking-[0.2em] text-amber-400/90">
+            <p className="text-lg font-semibold uppercase tracking-[0.2em] text-amber-400/90 mt-16 lg:mt-0">
               INSTALL THE APP
             </p>
 
             <h2
               id="app-preview-heading"
               className="mt-3 text-balance text-3xl font-bold tracking-tight text-white md:text-4xl md:tracking-[-0.02em]">
-              Start with the map—then decide where to go.
+              Start with the map, then decide where to go.
             </h2>
 
-            <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
-              Bands, art exhibits, open mics, stand-up, plays, drag, karaoke and more—if it&apos;s
+            <p className="mt-5 max-w-xl mx-auto lg:mx-0 text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
+              Bands, art exhibits, open mics, stand-up, plays, drag, karaoke and more...if it&apos;s
               live, it&apos;s on FOSH.
             </p>
 

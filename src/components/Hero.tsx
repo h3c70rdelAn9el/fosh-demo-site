@@ -28,24 +28,24 @@ export function Hero() {
       />
 
       {/* Overlayed Logo */}
-      <div className="absolute top-12 left-1/2 z-20 flex -translate-x-1/2 justify-center">
+      <div className="absolute top-1/6 left-1/2 z-20 flex -translate-x-1/2 justify-center w-full">
         <Image
           src="/FOSHLogo.png"
           alt="FOSH Logo"
-          width={420}
-          height={80}
-          style={{ height: 'auto' }}
+          width={950}
+          height={350}
+          style={{ height: 'auto', width: '95vw', maxWidth: 420 }}
           priority
-          className="animate-hero-fade-in animate-hero-delay-2"
+          className="animate-hero-fade-in animate-hero-delay-2 w-[95vw] max-w-[420px]"
         />
       </div>
 
-      <div className="relative z-10 mx-auto flex max-w-4xl mt-26 flex-col items-center">
+      <div className="relative z-10 mx-auto flex max-w-4xl mt-62 flex-col items-center">
         <h1 className="animate-hero-fade-in animate-hero-delay-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl md:leading-[1.08]">
           Real-time discovery for local live events.
         </h1>
-        <p className="animate-hero-fade-in animate-hero-delay-5 mt-8 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
-          Everything happening in the city—without checking five different places.
+        <p className="animate-hero-fade-in pl-4 animate-hero-delay-5 mt-8  text-left text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
+          Everything happening in the city...without checking five different places.
         </p>
         <div className="animate-hero-fade-in animate-hero-delay-6 mt-12 flex w-full max-w-md flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center sm:gap-4">
           <ButtonLink
