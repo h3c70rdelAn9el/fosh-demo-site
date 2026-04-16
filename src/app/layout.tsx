@@ -32,11 +32,20 @@ export const metadata: Metadata = {
     description,
     type: 'website',
     locale: 'en_US',
+    images: [
+      {
+        url: '/FOSHLogo.png',
+        width: 1200,
+        height: 630,
+        alt: 'FOSH Logo',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'FOSH — Discover what’s happening around you',
     description,
+    images: ['/FOSHLogo.png'],
   },
   robots: { index: true, follow: true },
   icons: {
