@@ -8,7 +8,7 @@ const links: FooterLink[] = [
   { label: 'Contact', href: 'mailto:admin@fosh.live' },
   { label: 'Instagram', href: 'https://www.instagram.com/tsglider/', external: true },
   { label: 'Terms', href: '/terms' },
-  { label: 'Privacy', href: '#' },
+  { label: 'Privacy', href: '/privacy' },
 ];
 
 import Link from 'next/link';
