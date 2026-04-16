@@ -1,7 +1,5 @@
 import Image from 'next/image';
 
-import { HERO_BG } from '@/constants/site-images';
-
 import { ButtonLink } from './ButtonLink';
 
 function DownArrow() {
@@ -29,7 +27,7 @@ export function Hero() {
         {/* Ken Burns on the image; fade-in on a wrapper so it doesn’t fight the transform animation. */}
         <div className="absolute inset-0 animate-hero-gradient-in">
           <Image
-            src={HERO_BG}
+            src="/bg_copy.jpg"
             alt=""
             fill
             priority
