@@ -25,23 +25,7 @@ export function AudienceSplit() {
       id="for-you"
       className="relative isolate overflow-hidden border-y border-zinc-800/80 bg-zinc-950 px-6 py-20 md:py-28">
       {/* Same crowd photo as hero; slow drift reads as “alive” without video. */}
-      <div
-        className="absolute inset-0 z-0 overflow-hidden"
-        aria-hidden>
-        <Image
-          src={HERO_BG}
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover object-center animate-photo-ken-burns-alt"
-          loading="lazy"
-        />
-        {/* Vignette and brown overlay */}
-        <div
-          className="absolute inset-0 pointer-events-none z-10 hero-vignette-overlay"
-          aria-hidden
-        />
-      </div>
+      {/* Remove section-specific background image; now handled globally */}
       <div
         className="absolute inset-0 z-[1] bg-linear-to-b from-zinc-950/82 via-zinc-950/72 to-zinc-950/88"
         aria-hidden

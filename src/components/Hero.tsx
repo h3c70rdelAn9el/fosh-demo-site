@@ -21,27 +21,11 @@ function DownArrow() {
 export function Hero() {
   return (
     <header className="relative flex min-h-screen shrink-0 flex-col items-center justify-center overflow-hidden px-6 pb-16 pt-24 text-center sm:pt-16">
+      {/* Remove section-specific background image; now handled globally */}
       <div
-        className="pointer-events-none absolute inset-0 z-0 overflow-hidden"
-        aria-hidden>
-        {/* Ken Burns on the image; fade-in on a wrapper so it doesn’t fight the transform animation. */}
-        <div className="absolute inset-0 animate-hero-gradient-in">
-          <Image
-            src="/bg_copy.jpg"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center animate-photo-ken-burns"
-          />
-          {/* Vignette and brown overlay */}
-          <div
-            className="absolute inset-0 pointer-events-none z-10 hero-vignette-overlay"
-            aria-hidden
-          />
-        </div>
-        <div className="absolute inset-0 bg-linear-to-b from-zinc-950/92 via-zinc-950/78 to-zinc-950 animate-hero-gradient-in" />
-      </div>
+        className="absolute inset-0 bg-linear-to-b from-zinc-950/92 via-zinc-950/78 to-zinc-950 animate-hero-gradient-in"
+        aria-hidden
+      />
 
       {/* Overlayed Logo */}
       <div className="absolute top-12 left-1/2 z-20 flex -translate-x-1/2 justify-center">

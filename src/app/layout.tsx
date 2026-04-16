@@ -56,7 +56,25 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-zinc-950 text-zinc-100 antialiased`}>{children}</body>
+      <body className={`${inter.className} bg-zinc-950 text-zinc-100 antialiased`}>
+        {/* Fixed background image with vignette overlay */}
+        <div
+          aria-hidden
+          className="fixed inset-0 -z-10 w-full h-full overflow-hidden">
+          <img
+            src="/bg_copy.jpg"
+            alt=""
+            className="w-full h-full object-cover object-center fixed-bg-image"
+            draggable="false"
+            aria-hidden
+          />
+          <div
+            className="absolute inset-0 hero-vignette-overlay"
+            aria-hidden
+          />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
