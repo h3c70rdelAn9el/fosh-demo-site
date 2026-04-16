@@ -174,9 +174,9 @@
   background:
     radial-gradient(
       ellipse at center,
-      rgba(255,255,255,0.22) 0%,
-      rgba(255,255,255,0.10) 40%,
-      rgba(255,255,255,0.00) 70%
+      rgba(255, 255, 255, 0.22) 0%,
+      rgba(255, 255, 255, 0.1) 40%,
+      rgba(255, 255, 255, 0) 70%
     ),
     radial-gradient(
       ellipse at center,
@@ -184,7 +184,7 @@
       rgba(60, 40, 20, 0.22) 60%,
       rgba(30, 20, 10, 0.38) 100%
     ),
-    linear-gradient(0deg, rgba(60, 40, 20, 0.10) 0%, rgba(60, 40, 20, 0.08) 100%);
+    linear-gradient(0deg, rgba(60, 40, 20, 0.1) 0%, rgba(60, 40, 20, 0.08) 100%);
   mix-blend-mode: multiply;
   opacity: 0.68;
   transition: opacity 0.3s;
