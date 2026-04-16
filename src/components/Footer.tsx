@@ -1,16 +1,15 @@
 type FooterLink = {
-  label: string
-  href: string
-  external?: boolean
-}
+  label: string;
+  href: string;
+  external?: boolean;
+};
 
 const links: FooterLink[] = [
-  { label: 'About', href: '#local' },
-  { label: 'Contact', href: 'mailto:hello@fosh.live' },
-  { label: 'Instagram', href: 'https://instagram.com', external: true },
+  { label: 'Contact', href: 'mailto:admin@fosh.live' },
+  { label: 'Instagram', href: 'https://www.instagram.com/tsglider/', external: true },
   { label: 'Terms', href: '#' },
   { label: 'Privacy', href: '#' },
-]
+];
 
 export function Footer() {
   return (
@@ -30,8 +29,7 @@ export function Footer() {
                   <a
                     href={href}
                     className="transition-colors hover:text-zinc-100"
-                    {...(external ? { target: '_blank', rel: 'noreferrer noopener' } : {})}
-                  >
+                    {...(external ? { target: '_blank', rel: 'noreferrer noopener' } : {})}>
                     {label}
                   </a>
                 </li>
@@ -44,5 +42,5 @@ export function Footer() {
         </p>
       </div>
     </footer>
-  )
+  );
 }
