@@ -3,20 +3,8 @@ import { ScrollReveal } from './ScrollReveal';
 
 function PhoneFrame() {
   return (
-    <div className="relative mx-auto w-full max-w-[min(100%,320px)]">
-      <div
-        className="pointer-events-none absolute inset-[-18%] rounded-[3rem] bg-amber-500/12 blur-3xl"
-        aria-hidden
-      />
-      <div className="relative rounded-[2.75rem] border border-zinc-600/50 bg-linear-to-b from-zinc-700/50 via-zinc-900 to-zinc-950 p-[10px] shadow-[0_40px_100px_-15px_rgba(0,0,0,0.9)]">
-        <div className="relative overflow-hidden rounded-[2.35rem] bg-black ring-1 ring-inset ring-white/10">
-          <div
-            className="pointer-events-none absolute left-1/2 top-2 z-10 h-5 w-[88px] -translate-x-1/2 rounded-full bg-zinc-950/95 shadow-sm"
-            aria-hidden
-          />
-          <AppMapDemoMedia />
-        </div>
-      </div>
+    <div className="relative">
+      <AppMapDemoMedia />
     </div>
   );
 }
@@ -24,8 +12,7 @@ function PhoneFrame() {
 export function AppMapPreview() {
   return (
     <section
-      id="app-preview"
-      className="relative overflow-hidden border-t border-zinc-800/80 bg-zinc-950 px-6 py-20 md:py-28"
+      className="relative"
       aria-labelledby="app-preview-heading">
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-amber-500/25 to-transparent"
@@ -43,36 +30,38 @@ export function AppMapPreview() {
               Start with the map—then decide where to go.
             </h2>
             <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
-              Bands, art exhibits, open mics, stand-up, plays, drag, karaoke and more—if it’s live,
-              it’s on FOSH.
+              Bands, art exhibits, open mics, stand-up, plays, drag, karaoke and more—if it's live,
+              it's on FOSH.
             </p>
+
             {/* App store icons row */}
             <div className="mt-8 flex flex-row items-center gap-4 justify-center lg:justify-start">
               <a
-                href="https://apps.apple.com/app/idYOUR_APP_ID" // TODO: Replace with real App Store link
+                href="https://apps.apple.com/app/idYOUR_APP_ID"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download on the App Store">
                 <img
                   src="/appstore.svg"
                   alt="App Store"
-                  className="h-44 w-auto"
+                  className="h-42 w-auto"
                 />
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" // TODO: Replace with real Google Play link
+                href="https://play.google.com/store/apps/details?id=YOUR_APP_ID"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Get it on Google Play">
                 <img
                   src="/googleplay.svg"
                   alt="Google Play"
-                  className="h-44 w-auto"
+                  className="h-42 w-auto"
                 />
               </a>
             </div>
           </ScrollReveal>
         </div>
+
         <ScrollReveal
           variant="default"
           delay={200}
