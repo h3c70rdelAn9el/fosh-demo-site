@@ -43,17 +43,42 @@ export function AudienceSplit() {
       />
       <div className="relative z-10 mx-auto max-w-5xl">
         <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {cards.map(({ title, body }, index) => (
-            <ScrollReveal
-              key={title}
-              delay={index * 260}
-              amount="md">
-              <article className="h-full rounded-2xl border border-zinc-800/90 bg-zinc-950/60 p-8 shadow-lg shadow-black/20 backdrop-blur-sm">
-                <h3 className="text-xl font-semibold text-white">{title}</h3>
-                <p className="mt-4 leading-relaxed text-zinc-400">{body}</p>
-              </article>
-            </ScrollReveal>
-          ))}
+          {/* Left card: slide in from left */}
+          <ScrollReveal
+            delay={0}
+            amount="md"
+            className="transition-transform duration-1000 will-change-transform"
+            variant="default"
+            direction="left">
+            <article className="h-full rounded-2xl border border-zinc-800/90 bg-zinc-950/60 p-8 shadow-lg shadow-black/20 backdrop-blur-sm">
+              <h3 className="text-xl font-semibold text-white">{cards[0].title}</h3>
+              <p className="mt-4 leading-relaxed text-zinc-400">{cards[0].body}</p>
+            </article>
+          </ScrollReveal>
+          {/* Middle card: fade/scale in (default) */}
+          <ScrollReveal
+            delay={260}
+            amount="md"
+            className="transition-transform duration-1000 will-change-transform"
+            variant="default"
+            direction="center">
+            <article className="h-full rounded-2xl border border-zinc-800/90 bg-zinc-950/60 p-8 shadow-lg shadow-black/20 backdrop-blur-sm">
+              <h3 className="text-xl font-semibold text-white">{cards[1].title}</h3>
+              <p className="mt-4 leading-relaxed text-zinc-400">{cards[1].body}</p>
+            </article>
+          </ScrollReveal>
+          {/* Right card: slide in from right */}
+          <ScrollReveal
+            delay={520}
+            amount="md"
+            className="transition-transform duration-1000 will-change-transform"
+            variant="default"
+            direction="right">
+            <article className="h-full rounded-2xl border border-zinc-800/90 bg-zinc-950/60 p-8 shadow-lg shadow-black/20 backdrop-blur-sm">
+              <h3 className="text-xl font-semibold text-white">{cards[2].title}</h3>
+              <p className="mt-4 leading-relaxed text-zinc-400">{cards[2].body}</p>
+            </article>
+          </ScrollReveal>
         </div>
       </div>
     </section>
