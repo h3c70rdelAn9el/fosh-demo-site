@@ -5,7 +5,7 @@ import { ScrollReveal } from './ScrollReveal';
 
 function PhoneFrame() {
   return (
-    <div className="relative p-8">
+    <div className="relative p-4 sm:p-6 md:p-8 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[420px]">
       <AppMapDemoMedia />
     </div>
   );
