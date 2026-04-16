@@ -37,7 +37,7 @@ export function AppMapPreview() {
             {/* App store icons row */}
             <div className="mt-8 flex flex-row items-center gap-4 justify-center lg:justify-start">
               <a
-                href="https://apps.apple.com/app/idYOUR_APP_ID"
+                href="https://apps.apple.com/app/id6752311456"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download on the App Store">
@@ -48,7 +48,7 @@ export function AppMapPreview() {
                 />
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=YOUR_APP_ID"
+                href="https://play.google.com/store/apps/details?id=com.foshapp.app&pli=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Get it on Google Play">
