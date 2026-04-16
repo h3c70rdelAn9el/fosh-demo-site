@@ -5,17 +5,17 @@ const steps = [
   {
     step: '1.',
     title: 'Start with the map',
-    body: 'See what’s live near you. Pan the city and see what’s happening. Location-aware listings so tonight’s options are obvious—not scattered across apps.',
+    body: 'Pan the city and see what’s happening.',
   },
   {
     step: '2.',
     title: 'Tune it to your night',
-    body: 'Filter by date, genre, venue, or vibe—skip the noise, keep the good stuff.',
+    body: 'Filter by day, neighborhood, or what you’re into.',
   },
   {
     step: '3.',
-    title: 'Do It Go',
-    body: 'Pick something and head out. Plans change; FOSH updates in real time. Decide, save, and show up.',
+    title: 'Do It',
+    body: 'Pick something and head out.',
   },
 ] as const;
 
