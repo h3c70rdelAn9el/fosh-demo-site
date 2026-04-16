@@ -34,6 +34,11 @@ export function Hero() {
             sizes="100vw"
             className="object-cover object-center animate-photo-ken-burns"
           />
+          {/* Vignette and brown overlay */}
+          <div
+            className="absolute inset-0 pointer-events-none z-10 hero-vignette-overlay"
+            aria-hidden
+          />
         </div>
         <div className="absolute inset-0 bg-linear-to-b from-zinc-950/92 via-zinc-950/78 to-zinc-950 animate-hero-gradient-in" />
       </div>

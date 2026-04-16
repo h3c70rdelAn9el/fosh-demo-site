@@ -36,6 +36,11 @@ export function AudienceSplit() {
           className="object-cover object-center animate-photo-ken-burns-alt"
           loading="lazy"
         />
+        {/* Vignette and brown overlay */}
+        <div
+          className="absolute inset-0 pointer-events-none z-10 hero-vignette-overlay"
+          aria-hidden
+        />
       </div>
       <div
         className="absolute inset-0 z-[1] bg-linear-to-b from-zinc-950/82 via-zinc-950/72 to-zinc-950/88"
