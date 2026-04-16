@@ -37,7 +37,7 @@ export function AppMapPreview() {
             </h2>
 
             <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
-              Bands, art exhibits, open mics, stand-up, plays, drag, karaoke and more—if it's live,
+              Bands, art exhibits, open mics, stand-up, plays, drag, karaoke and more—if it&apos;s live,
               it&apos;s on FOSH.
             </p>
 
