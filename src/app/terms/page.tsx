@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function TermsPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-100 py-8 px-4">
-      <div className="mx-auto my-8 max-w-2xl rounded-xl bg-white p-8 text-black shadow-md">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 py-8 px-4">
+      <div className="mx-auto my-8 max-w-2xl rounded-xl bg-gray-800 p-8 text-white shadow-md">
         <h1 className="mb-2 text-center text-3xl font-bold">Terms &amp; Conditions</h1>
         <p className="mb-6 text-center text-sm text-gray-500">Effective Date: 06-24-2025</p>
-        <div className="prose prose-orange max-w-none text-gray-800">
+        <div className="prose prose-orange max-w-none text-gray-200">
           <p>
             Welcome to FOSH. By accessing or using our application and related services, you agree
             to be bound by the following Terms and Conditions. Please read them carefully. If you do
