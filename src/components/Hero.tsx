@@ -43,7 +43,7 @@ export function Hero() {
       {/* Overlayed Logo */}
       <div className="absolute top-12 left-1/2 z-20 flex -translate-x-1/2 justify-center">
         <Image
-          src="/FOSHLogo.png"
+          src="/fosh_logo.png"
           alt="FOSH Logo"
           width={320}
           height={80}
