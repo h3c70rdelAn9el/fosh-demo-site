@@ -4,6 +4,22 @@ import { HERO_BG } from '@/constants/site-images';
 
 import { ButtonLink } from './ButtonLink';
 
+function DownArrow() {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M12 16L6 10H18L12 16Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
 export function Hero() {
   return (
     <header className="relative flex min-h-screen shrink-0 flex-col items-center justify-center overflow-hidden px-6 pb-16 pt-24 text-center sm:pt-16">
@@ -58,17 +74,7 @@ export function Hero() {
         </div>
         {/* Down-pointing arrow below the buttons */}
         <div className="mt-8 animate-bounce">
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M12 16L6 10H18L12 16Z"
-              fill="currentColor"
-            />
-          </svg>
+          <DownArrow />
         </div>
       </div>
     </header>
