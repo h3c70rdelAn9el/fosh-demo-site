@@ -20,13 +20,13 @@ export function LoginRegisterCTA({
         className,
       )}>
       <ButtonLink
-        href="#how-it-works"
+        href=" http://www.fosh.live/welcome?modal=login"
         variant="primary"
         className={cn('min-w-48 px-10', primaryClassName)}>
         Login
       </ButtonLink>
       <ButtonLink
-        href="#join"
+        href="https://www.fosh.live/welcome?modal=register"
         variant="secondary"
         className={cn('min-w-48 px-10', secondaryClassName)}>
         Register for Free
