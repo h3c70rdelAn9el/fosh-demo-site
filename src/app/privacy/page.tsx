@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function PrivacyPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 py-8 px-4 ">

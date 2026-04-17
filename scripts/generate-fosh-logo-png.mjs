@@ -2,7 +2,7 @@
  * One-shot: raster favicon.svg onto a 1200×630 OG canvas as public/fosh_logo.png
  * (logo-only preview; replace this file anytime with your official wordmark asset).
  */
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import sharp from 'sharp';
 

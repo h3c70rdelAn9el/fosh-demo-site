@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function TermsPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 py-8 px-4">
@@ -33,7 +31,7 @@ export default function TermsPage() {
             </li>
             <li>
               <strong>Delete Account</strong> <br />
-              From your 'My Profile' tap Edit Profile. At the bottom of the Edit Profile screen, tap
+              From your &apos;My Profile&apos; tap Edit Profile. At the bottom of the Edit Profile screen, tap
               Delete Account. Enter your account password and tap Delete Account. Your account is
               permanently deleted. If you are unable to locate your password, email your delete
               account request to:
