@@ -1,4 +1,4 @@
-import { ButtonLink } from './ButtonLink';
+import { LoginRegisterCTA } from './LoginRegisterCTA';
 import { ScrollReveal } from './ScrollReveal';
 import { Section } from './Section';
 
@@ -23,12 +23,7 @@ export function FinalCTA() {
         variant="default"
         delay={420}
         className="relative mt-10">
-        <ButtonLink
-          href="#how-it-works"
-          variant="primary"
-          className="min-w-48 px-10">
-          Login
-        </ButtonLink>
+        <LoginRegisterCTA />
       </ScrollReveal>
     </Section>
   );

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { ButtonLink } from './ButtonLink';
+import { LoginRegisterCTA } from './LoginRegisterCTA';
 
 function DownArrow() {
   return (
@@ -47,18 +47,7 @@ export function Hero() {
         <p className="animate-hero-fade-in pl-4 animate-hero-delay-5 mt-8  text-left text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
           Everything happening in the city...without checking five different places.
         </p>
-        <div className="animate-hero-fade-in animate-hero-delay-6 mt-12 flex w-full max-w-md flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center sm:gap-4">
-          <ButtonLink
-            href="#how-it-works"
-            variant="primary">
-            Login
-          </ButtonLink>
-          <ButtonLink
-            href="#join"
-            variant="secondary">
-            Register for Free
-          </ButtonLink>
-        </div>
+        <LoginRegisterCTA className="animate-hero-fade-in animate-hero-delay-6 mt-12" />
         {/* Down-pointing arrow below the buttons */}
         <div className="mt-8 animate-bounce">
           <DownArrow />
