@@ -4,7 +4,7 @@ export default function TermsPage() {
       <div className="mx-auto my-8 max-w-2xl rounded-xl bg-gray-800 p-8 text-white shadow-md">
         <h1 className="mb-2 text-center text-3xl font-bold">Terms &amp; Conditions</h1>
         <p className="mb-6 text-center text-sm text-gray-500">Effective Date: 06-24-2025</p>
-        <div className="prose prose-orange max-w-none text-gray-200">
+        <div className="prose prose-orange max-w-none text-white">
           <p>
             Welcome to FOSH. By accessing or using our application and related services, you agree
             to be bound by the following Terms and Conditions. Please read them carefully. If you do
@@ -31,10 +31,10 @@ export default function TermsPage() {
             </li>
             <li>
               <strong>Delete Account</strong> <br />
-              From your &apos;My Profile&apos; tap Edit Profile. At the bottom of the Edit Profile screen, tap
-              Delete Account. Enter your account password and tap Delete Account. Your account is
-              permanently deleted. If you are unable to locate your password, email your delete
-              account request to:
+              From your &apos;My Profile&apos; tap Edit Profile. At the bottom of the Edit Profile
+              screen, tap Delete Account. Enter your account password and tap Delete Account. Your
+              account is permanently deleted. If you are unable to locate your password, email your
+              delete account request to:
               <a
                 href="mailto:DeleteMe@FOSH.Live"
                 className="text-orange-600 underline">
