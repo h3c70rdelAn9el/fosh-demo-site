@@ -20,9 +20,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
           <div className="text-center md:text-left">
             <p className="text-lg font-bold tracking-tight text-white">FOSH</p>
-            <p className="mt-1 max-w-xs text-sm text-zinc-500">
-              Local events, hidden venues, real moments.
-            </p>
+            <p className="mt-1 max-w-xs text-sm text-zinc-500">Get Up. Get Out. Have Fun.</p>
           </div>
           <nav aria-label="Footer">
             <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-zinc-400">

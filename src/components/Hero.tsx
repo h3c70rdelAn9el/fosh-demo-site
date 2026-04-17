@@ -42,7 +42,7 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex max-w-4xl mt-62 flex-col items-center">
         <h1 className="animate-hero-fade-in animate-hero-delay-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl md:leading-[1.08]">
-          Real-time discovery for local live events.
+          Real-time discovery for live Philly events.
         </h1>
         <p className="animate-hero-fade-in pl-4 animate-hero-delay-5 mt-8  text-left text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
           Everything happening in the city...without checking five different places.
