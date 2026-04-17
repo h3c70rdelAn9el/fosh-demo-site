@@ -15,7 +15,7 @@ const steps = [
   {
     step: '3.',
     title: 'Do it',
-    body: 'Pick something and head out.',
+    body: 'Pick something, share it with your friends, and head out.',
   },
 ] as const;
 

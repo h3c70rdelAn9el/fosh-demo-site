@@ -34,7 +34,7 @@ const socialAndContact: SocialOrContactLink[] = [
     href: 'https://www.linkedin.com/company/foshapp/',
     social: 'linkedin',
   },
-  { label: 'Contact', href: 'mailto:admin@fosh.live' },
+  { label: 'Contact', href: 'mailto:contact@fosh.live' },
 ];
 
 /** Always plain internal routes — kept separate so they never get lost in social/mailto logic */
@@ -63,10 +63,16 @@ export function Footer() {
                       target="_blank"
                       rel="noreferrer noopener"
                       aria-label={label}>
-                      <FontAwesomeIcon icon={socialIcon[social]} className="h-5 w-5" aria-hidden />
+                      <FontAwesomeIcon
+                        icon={socialIcon[social]}
+                        className="h-5 w-5"
+                        aria-hidden
+                      />
                     </a>
                   ) : (
-                    <a href={href} className={linkClass}>
+                    <a
+                      href={href}
+                      className={linkClass}>
                       {label}
                     </a>
                   )}
@@ -74,7 +80,9 @@ export function Footer() {
               ))}
               {legalLinks.map(({ label, href }) => (
                 <li key={href}>
-                  <Link href={href} className={linkClass}>
+                  <Link
+                    href={href}
+                    className={linkClass}>
                     {label}
                   </Link>
                 </li>
