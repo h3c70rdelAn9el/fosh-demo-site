@@ -34,9 +34,9 @@ export function Hero() {
           alt="FOSH Logo"
           width={950}
           height={350}
-          style={{ height: 'auto', width: '95vw', maxWidth: 420 }}
           priority
-          className="animate-hero-fade-in animate-hero-delay-2 w-[95vw] max-w-[420px]"
+          sizes="(max-width: 640px) 96vw, 560px"
+          className="animate-hero-fade-in animate-hero-delay-2 h-auto w-[min(96vw,560px)]"
         />
       </div>
 
