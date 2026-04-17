@@ -1,7 +1,3 @@
-import Image from 'next/image';
-
-import { HERO_BG } from '@/constants/site-images';
-
 import { ScrollReveal } from './ScrollReveal';
 
 const cards = [
