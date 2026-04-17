@@ -4,8 +4,16 @@ import { LoginRegisterCTA } from './LoginRegisterCTA';
 
 function DownArrow() {
   return (
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 16L6 10H18L12 16Z" fill="currentColor" />
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M12 16L6 10H18L12 16Z"
+        fill="currentColor"
+      />
     </svg>
   );
 }
@@ -22,7 +30,7 @@ export function Hero() {
       {/* Overlayed Logo */}
       <div className="absolute top-1/8 left-1/2 z-20 flex -translate-x-1/2 justify-center w-full">
         <Image
-          src="/FOSHLogo.png"
+          src="/FOSHLogoBiggerNeon.png"
           alt="FOSH Logo"
           width={950}
           height={350}
