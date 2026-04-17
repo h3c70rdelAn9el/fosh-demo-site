@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
 import type { ReactNode } from 'react';
+import Head from 'next/head';
 import './globals.css';
 
 const inter = Inter({
@@ -70,6 +71,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <Head>
+        <meta
+          property="og:image"
+          content={`${siteUrl}/foshlogo.png`}
+        />
+        <meta
+          property="twitter:image"
+          content={`${siteUrl}/foshlogo.png`}
+        />
+      </Head>
       <body className={`${inter.className} bg-zinc-950 text-zinc-100 antialiased`}>
         {/* Fixed background image with vignette overlay */}
         <div
