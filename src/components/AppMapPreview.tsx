@@ -13,9 +13,7 @@ function PhoneFrame() {
 
 export function AppMapPreview() {
   return (
-    <section
-      className="relative bg-black"
-      aria-labelledby="app-preview-heading">
+    <section className="relative bg-black" aria-labelledby="app-preview-heading">
       {/* top gradient line */}
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent"
@@ -32,11 +30,12 @@ export function AppMapPreview() {
 
             <h2
               id="app-preview-heading"
-              className="mt-3 text-balance text-3xl font-bold tracking-tight text-white md:text-4xl md:tracking-[-0.02em]">
+              className="mt-3 text-balance text-3xl font-bold tracking-tight text-white md:text-4xl md:tracking-[-0.02em]"
+            >
               Start with the map, then decide where to go.
             </h2>
 
-            <p className="mt-5 max-w-xl mx-auto lg:mx-0 text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
+            <p className="mt-5 max-w-xl mx-auto text-left pl-4 lg:pl-0 lg:mx-0 text-pretty text-lg leading-relaxed text-zinc-400 md:text-xl">
               Bands, art exhibits, open mics, stand-up, plays, drag, karaoke and more...if it&apos;s
               live, it&apos;s on FOSH.
             </p>
@@ -48,7 +47,8 @@ export function AppMapPreview() {
                 href="https://apps.apple.com/app/id6752311456"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Download on the App Store">
+                aria-label="Download on the App Store"
+              >
                 <Image
                   src="/appstore.svg"
                   alt="Download on the App Store"
@@ -63,7 +63,8 @@ export function AppMapPreview() {
                 href="https://play.google.com/store/apps/details?id=com.foshapp.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Get it on Google Play">
+                aria-label="Get it on Google Play"
+              >
                 <Image
                   src="/googleplay.svg"
                   alt="Get it on Google Play"
@@ -77,10 +78,7 @@ export function AppMapPreview() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <ScrollReveal
-          variant="default"
-          delay={200}
-          className="flex justify-center lg:justify-end">
+        <ScrollReveal variant="default" delay={200} className="flex justify-center lg:justify-end">
           <PhoneFrame />
         </ScrollReveal>
       </div>
