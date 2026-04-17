@@ -6,7 +6,7 @@ export default function PrivacyPage() {
         <p className="mb-6 text-center text-sm text-gray-500 dark:text-gray-400">
           Effective Date: 06-24-2025
         </p>
-        <div className="prose prose-orange max-w-none text-gray-800 dark:text-gray-200">
+        <div className="prose prose-orange max-w-none  text=white">
           <p>
             FOSH respects your privacy and is committed to protecting your personal information.
             This Privacy Policy explains how we collect, use, and safeguard your data when you use
@@ -81,9 +81,9 @@ export default function PrivacyPage() {
                 <li>
                   Request that we delete your data by contacting
                   <a
-                    href="mailto:contact@foshapp.com"
+                    href="mailto:contact@fosh.live"
                     className="text-orange-600 underline">
-                    contact@foshapp.com
+                    contact@fosh.live
                   </a>
                   .
                 </li>
@@ -108,9 +108,9 @@ export default function PrivacyPage() {
               <strong>Contact Us</strong> <br />
               If you have any questions or concerns about this Privacy Policy, contact us at
               <a
-                href="mailto:contact@foshapp.com"
+                href="mailto:contact@fosh.live"
                 className="text-orange-600 underline">
-                contact@foshapp.com
+                contact@fosh.live
               </a>
               .
             </li>
