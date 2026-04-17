@@ -151,20 +151,6 @@
   }
 }
 
-.fixed-bg-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -10;
-  object-fit: cover;
-  object-position: center;
-  pointer-events: none;
-  user-select: none;
-  will-change: transform;
-}
-
 .hero-vignette-overlay {
   pointer-events: none;
   z-index: 10;
