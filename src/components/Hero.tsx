@@ -4,16 +4,8 @@ import { LoginRegisterCTA } from './LoginRegisterCTA';
 
 function DownArrow() {
   return (
-    <svg
-      width="32"
-      height="32"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M12 16L6 10H18L12 16Z"
-        fill="currentColor"
-      />
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 16L6 10H18L12 16Z" fill="currentColor" />
     </svg>
   );
 }
@@ -28,7 +20,7 @@ export function Hero() {
       />
 
       {/* Overlayed Logo */}
-      <div className="absolute top-1/6 left-1/2 z-20 flex -translate-x-1/2 justify-center w-full">
+      <div className="absolute top-1/8 left-1/2 z-20 flex -translate-x-1/2 justify-center w-full">
         <Image
           src="/FOSHLogo.png"
           alt="FOSH Logo"
@@ -40,7 +32,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto flex max-w-4xl mt-62 flex-col items-center">
+      <div className="relative z-10 mx-auto flex max-w-4xl mt-66 flex-col items-center">
         <h1 className="animate-hero-fade-in animate-hero-delay-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl md:leading-[1.08]">
           Real-time discovery for live Philly events.
         </h1>
