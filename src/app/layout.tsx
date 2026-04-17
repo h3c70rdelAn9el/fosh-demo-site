@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/fosh_logo.png',
-        width: 1200,
-        height: 630,
+        url: '/FOSHLogoBiggerNeon.png',
+        width: 2395,
+        height: 894,
         alt: 'FOSH',
       },
     ],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'FOSH — Discover what’s happening around you',
     description,
-    images: ['/fosh_logo.png'],
+    images: ['/FOSHLogoBiggerNeon.png'],
   },
   robots: { index: true, follow: true },
   icons: {
