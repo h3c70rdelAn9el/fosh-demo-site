@@ -26,10 +26,18 @@ export function LoginRegisterCTA({
         Login
       </ButtonLink>
       <ButtonLink
-        href="#join"
+        href="https://www.fosh.live"
         variant="secondary"
         className={cn('min-w-48 px-10', secondaryClassName)}>
         Register for Free
+      </ButtonLink>
+      <ButtonLink
+        href="https://www.fosh.live"
+        variant="primary"
+        className={cn('min-w-48 px-10')}
+        target="_blank"
+        rel="noopener noreferrer">
+        Visit fosh.live
       </ButtonLink>
     </div>
   );
