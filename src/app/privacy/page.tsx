@@ -1,11 +1,9 @@
 export default function PrivacyPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gray-900 py-8 px-4 ">
-      <div className="mx-auto my-8 max-w-2xl rounded-xl bg-gray-800 p-8 text-black shadow-md  dark:text-gray-100">
+      <div className="mx-auto my-8 max-w-2xl rounded-xl bg-gray-800 p-8  shadow-md text-gray-100">
         <h1 className="mb-2 text-center text-3xl font-bold">Privacy Policy</h1>
-        <p className="mb-6 text-center text-sm text-gray-500 dark:text-gray-400">
-          Effective Date: 06-24-2025
-        </p>
+        <p className="mb-6 text-center text-sm text-gray-400">Effective Date: 06-24-2025</p>
         <div className="prose prose-orange max-w-none  text=white">
           <p>
             FOSH respects your privacy and is committed to protecting your personal information.
