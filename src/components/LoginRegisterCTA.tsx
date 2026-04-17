@@ -21,8 +21,6 @@ export function LoginRegisterCTA({
       )}>
       <ButtonLink
         href="https://www.fosh.live/?modal=login"
-        target="_blank"
-        rel="noopener noreferrer"
         variant="primary"
         className={cn('min-w-48 px-10', primaryClassName)}>
         Login
