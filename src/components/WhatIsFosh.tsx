@@ -27,8 +27,8 @@ export function WhatIsFosh() {
             It’s easier to figure out what’s on TV tonight than what’s happening in your own
             neighborhood.
             <br />
-            Everything’s scattered across social channels…Instagram posts, venue pages, newsletters,
-            and ticketing websites.
+            Everything’s scattered...across social channels, Instagram posts, venue pages,
+            newsletters, and ticketing websites.
             <br />
             FOSH puts what’s actually happening around you in one place; so you can find something
             and get out the door.
