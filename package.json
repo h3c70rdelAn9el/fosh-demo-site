@@ -10,6 +10,9 @@
     "generate:fosh-logo": "node scripts/generate-fosh-logo-png.mjs"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.3.0",
     "clsx": "^2.1.1",
     "next": "^15.5.0",
     "react": "^19.2.4",

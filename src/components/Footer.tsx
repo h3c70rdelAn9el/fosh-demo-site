@@ -1,17 +1,47 @@
-type FooterLink = {
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faFacebook, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+
+const linkClass = 'transition-colors hover:text-zinc-100';
+
+type SocialOrContactLink = {
   label: string;
   href: string;
-  external?: boolean;
+  social?: 'instagram' | 'linkedin' | 'facebook';
 };
 
-const links: FooterLink[] = [
+const socialIcon: Record<NonNullable<SocialOrContactLink['social']>, IconDefinition> = {
+  instagram: faInstagram,
+  linkedin: faLinkedinIn,
+  facebook: faFacebook,
+};
+
+/** Social + contact — order: Instagram, Facebook, LinkedIn, then Contact */
+const socialAndContact: SocialOrContactLink[] = [
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/fosh.live/',
+    social: 'instagram',
+  },
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/profile.php?id=61575689137247',
+    social: 'facebook',
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/foshapp/',
+    social: 'linkedin',
+  },
   { label: 'Contact', href: 'mailto:admin@fosh.live' },
-  { label: 'Instagram', href: 'https://www.instagram.com/tsglider/', external: true },
-  { label: 'Terms', href: '/terms' },
-  { label: 'Privacy', href: '/privacy' },
 ];
 
-import Link from 'next/link';
+/** Always plain internal routes — kept separate so they never get lost in social/mailto logic */
+const legalLinks = [
+  { label: 'Terms', href: '/terms' },
+  { label: 'Privacy', href: '/privacy' },
+] as const;
 
 export function Footer() {
   return (
@@ -24,22 +54,29 @@ export function Footer() {
           </div>
           <nav aria-label="Footer">
             <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-zinc-400">
-              {links.map(({ label, href, external }) => (
+              {socialAndContact.map(({ label, href, social }) => (
                 <li key={label}>
-                  {href.startsWith('/') && !external ? (
-                    <Link
-                      href={href}
-                      className="transition-colors hover:text-zinc-100">
-                      {label}
-                    </Link>
-                  ) : (
+                  {social ? (
                     <a
                       href={href}
-                      className="transition-colors hover:text-zinc-100"
-                      {...(external ? { target: '_blank', rel: 'noreferrer noopener' } : {})}>
+                      className={`flex items-center ${linkClass}`}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={label}>
+                      <FontAwesomeIcon icon={socialIcon[social]} className="h-5 w-5" aria-hidden />
+                    </a>
+                  ) : (
+                    <a href={href} className={linkClass}>
                       {label}
                     </a>
                   )}
+                </li>
+              ))}
+              {legalLinks.map(({ label, href }) => (
+                <li key={href}>
+                  <Link href={href} className={linkClass}>
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
