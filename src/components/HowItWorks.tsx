@@ -14,7 +14,7 @@ const steps = [
   },
   {
     step: '3.',
-    title: 'Do It',
+    title: 'Do it',
     body: 'Pick something and head out.',
   },
 ] as const;

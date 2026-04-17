@@ -10,19 +10,25 @@ const bullets = [
 
 export function WhatIsFosh() {
   return (
-    <Section id="local" className="border-t border-zinc-800/80 bg-zinc-950">
+    <Section
+      id="local"
+      className="border-t border-zinc-800/80 bg-zinc-950">
       <ScrollReveal variant="prominent">
         <h2 className="text-balance text-3xl text-center font-bold tracking-tight text-white md:text-4xl md:tracking-[-0.02em]">
           Local live events shouldn’t be this hard to find
         </h2>
       </ScrollReveal>
-      <ScrollReveal variant="default" delay={360} className="mt-8">
+      <ScrollReveal
+        variant="default"
+        delay={360}
+        className="mt-8">
         <div className="space-y-6 text-lg text-left pl-4leading-relaxed text-zinc-400">
           <p>
             It’s easier to figure out what’s on TV tonight than what’s happening in your own
             neighborhood.
             <br />
-            Everything’s scattered, Instagram, venue sites, outdated calendars.
+            Everything’s scattered across social channels…Instagram posts, venue pages, newsletters,
+            and ticketing websites.
             <br />
             FOSH puts what’s actually happening around you in one place; so you can find something
             and get out the door.
@@ -31,7 +37,11 @@ export function WhatIsFosh() {
       </ScrollReveal>
       <ul className="mt-12 space-y-4 border-l-6 border-amber-500/40 ml-4 pl-4 text-left text-zinc-300">
         {bullets.map((line, index) => (
-          <ScrollReveal key={line} variant="subtle" delay={420 + index * 200} amount="md">
+          <ScrollReveal
+            key={line}
+            variant="subtle"
+            delay={420 + index * 200}
+            amount="md">
             <li className="leading-relaxed">{line}</li>
           </ScrollReveal>
         ))}
